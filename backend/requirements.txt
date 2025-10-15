@@ -1,0 +1,4 @@
+Flask==2.3.0 # micro-framework web (vai servir frontend e endpoints).
+requests==2.31.0 # para fazer chamadas HTTP à PokeAPI.
+cachetools==5.3.0 # para caching de respostas da PokeAPI.
+urllib3==2.1.0 # para lidar com conexões HTTP.

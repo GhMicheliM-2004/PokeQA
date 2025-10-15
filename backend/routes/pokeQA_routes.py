@@ -1,0 +1,1 @@
+# Define URL base para o serviço PokeQA (exemplo: "/pokemon/nome_do_pokemon")
