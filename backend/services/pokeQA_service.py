@@ -29,15 +29,21 @@ def busca_pokemon_id(pokemon_id):
 def busca_info_pokemon(response_json):
     nome = response_json.get("name")
     id_pokemon = response_json.get("id")
+    altura = response_json.get("height")
+    peso = response_json.get("weight")
     tipos = [t['type']['name'] for t in response_json.get("types")]
     stats = [{stat['stat']['name']: stat['base_stat'] for stat in response_json.get("stats", [])}]
-    
+    # imagem = response_json.get("sprites").get("home").get("front_default")
+
     return {
         "nome": nome,
         "id": id_pokemon,
+        "altura": altura,
+        "peso": peso,
         "tipos": tipos,
-        "stats": stats
-    }
+        "stats": stats,
+        #"imagem": imagem
+        }
 
 def main():
     # Testa a função de busca por nome
